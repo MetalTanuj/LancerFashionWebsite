@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://metaltanuj.github.io/LancerFashionWebsite/sitemap.xml
+Sitemap: https://lancerandco.com/sitemap.xml
