@@ -3,25 +3,110 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lancer Fashions & Co. | Uniform Manufacturer in Indore</title>
+    <title>Uniform Manufacturer | Lancer Fashions</title>
     <meta
       name="description"
-      content="Lancer Fashions & Co. is a uniform and apparel manufacturer in Indore, India. Bulk production of air hostess uniforms, pilot uniforms, formal suits, women's dresses, and co-ord sets."
+      content="Lancer Fashions &amp; Co is a premium uniform manufacturer in Indore, India, offering bulk apparel production, custom uniform design, kurtis, taekwondo uniforms, OEM, and private label manufacturing."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://lancerandco.com/" />
-    <meta property="og:title" content="Lancer Fashions & Co. | Uniform Manufacturer in Indore" />
+    <meta property="og:title" content="Uniform Manufacturer | Lancer Fashions" />
     <meta
       property="og:description"
-      content="Premium uniforms and apparel designed for scale, comfort, and precision. Bulk manufacturing for corporate, aviation, hospitality, and boutique brands across India."
+      content="Premium uniforms and apparel designed for scale, comfort, and precision. Bulk manufacturing for aviation, corporate, hospitality, retail, and boutique brands across India."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lancerandco.com/" />
+    <meta property="og:image" content="https://lancerandco.com/assets/openart-image_TWDEeJPt_1768826333705_raw%20%281%29.jpg" />
+    <meta property="og:site_name" content="Lancer Fashions & Co" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "ClothingStore"],
+        "@id": "https://lancerandco.com/#business",
+        "name": "Lancer Fashions & Co",
+        "url": "https://lancerandco.com/",
+        "image": "https://lancerandco.com/assets/openart-image_TWDEeJPt_1768826333705_raw%20%281%29.jpg",
+        "telephone": "+918754021058",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Indore",
+          "addressRegion": "Madhya Pradesh",
+          "addressCountry": "IN"
+        },
+        "areaServed": "India",
+        "description": "B2B apparel and uniform manufacturer in Indore, India, producing air hostess uniforms, women's dresses, co-ord sets, formal suits, pilot uniforms, kurtis, and taekwondo uniforms for bulk buyers.",
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Air Hostess Uniform",
+              "description": "Premium air hostess and cabin crew uniforms manufactured in Indore for aviation, hospitality, and corporate teams across India."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Women's Dresses",
+              "description": "Corporate and retail women's dresses manufactured for bulk buyers, boutique labels, front desk teams, and private label programs in India."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Women Co-Ord Sets",
+              "description": "Women's co-ord sets manufactured for corporate, hospitality, retail, and event teams with custom fabric, color, trim, and branding options."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Men's Formal Suits",
+              "description": "Men's formal suit manufacturing in Indore for corporate uniforms, hospitality staff, retail teams, and pan-India business buyers."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Pilot Uniform",
+              "description": "Pilot uniforms manufactured in India for airlines, aviation institutes, captain roles, crew roles, and corporate aviation environments."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Kurti",
+              "description": "Kurti and ethnic wear manufacturing in Indore for boutique labels, retail brands, private label buyers, and bulk apparel programs across India."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Taekwondo Uniform",
+              "description": "Taekwondo uniform manufacturing for academies, sports institutions, training centers, and bulk uniform buyers across India."
+            }
+          }
+        ]
+      }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            colors: {
+              blush: "#F5E9E7",
+              roseline: "#EAD6D2",
+              ink: "#111111",
+              muted: "#6B6B6B",
+            },
             fontFamily: {
               sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
             },
@@ -30,7 +115,7 @@
       };
     </script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
       html {
         scroll-behavior: smooth;
@@ -39,23 +124,85 @@
       body {
         font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
         -webkit-font-smoothing: antialiased;
+        text-rendering: geometricPrecision;
+      }
+
+      .flip-card {
+        perspective: 1200px;
+      }
+
+      .flip-inner {
+        transform-style: preserve-3d;
+        transition: transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+
+      .flip-card:hover .flip-inner,
+      .flip-card:focus .flip-inner,
+      .flip-card:focus-within .flip-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-face {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+
+      .flip-back {
+        transform: rotateY(180deg);
+      }
+
+      .gallery-image {
+        transition: transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+
+      .gallery-item {
+        transition: transform 300ms cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 300ms ease;
+      }
+
+      .gallery-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 40px rgba(17, 17, 17, 0.08);
+      }
+
+      .gallery-item:hover .gallery-image {
+        transform: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        .flip-inner,
+        .gallery-image {
+          transition: none;
+        }
+
+        .flip-card:hover .flip-inner,
+        .flip-card:focus .flip-inner,
+        .flip-card:focus-within .flip-inner {
+          transform: none;
+        }
       }
     </style>
   </head>
-  <body class="bg-white text-neutral-950">
-    <header class="sticky top-0 z-40 border-b border-neutral-200 bg-white/95 backdrop-blur">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-        <a href="#top" class="text-base font-semibold tracking-tight">Lancer Fashions & Co.</a>
-        <div class="hidden items-center gap-8 text-sm text-neutral-600 sm:flex">
-          <a class="hover:text-neutral-950" href="#categories">Products</a>
-          <a class="hover:text-neutral-950" href="#capabilities">Capabilities</a>
-          <a class="hover:text-neutral-950" href="#contact">Contact</a>
+
+  <body class="bg-white text-ink">
+    <header class="sticky top-0 z-50 border-b border-black/10 bg-white/90 backdrop-blur-xl">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-6">
+        <a href="#top" class="text-sm font-semibold tracking-tight sm:text-base">Lancer Fashions &amp; Co</a>
+        <div class="hidden items-center gap-8 text-sm font-medium text-muted md:flex">
+          <a class="transition hover:text-ink" href="#categories">Uniforms</a>
+          <a class="transition hover:text-ink" href="#gallery">Work</a>
+          <a class="transition hover:text-ink" href="#capabilities">Capabilities</a>
+          <a class="transition hover:text-ink" href="#contact">Contact</a>
         </div>
         <a
-          class="inline-flex min-h-10 items-center justify-center rounded-full bg-neutral-950 px-5 text-sm font-medium text-white transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2"
+          class="inline-flex min-h-10 items-center justify-center rounded-full bg-ink px-5 text-sm font-semibold text-white transition hover:bg-black focus:outline-none focus:ring-2 focus:ring-ink focus:ring-offset-2"
           href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products"
           target="_blank"
           rel="noopener"
+          aria-label="Contact Lancer Fashions on WhatsApp"
         >
           WhatsApp
         </a>
@@ -63,252 +210,431 @@
     </header>
 
     <main id="top">
-      <section class="border-b border-neutral-200">
-        <div class="mx-auto flex min-h-[calc(100vh-73px)] max-w-6xl flex-col justify-center px-5 py-24">
-          <h1 class="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl md:text-6xl">
-            Uniform Manufacturer in Indore for Modern Businesses
-          </h1>
-          <p class="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
-            Premium uniforms and apparel designed for scale, comfort, and precision.
-          </p>
-          <div class="mt-12">
-            <a
-              class="inline-flex min-h-12 items-center justify-center rounded-full bg-neutral-950 px-8 text-base font-medium text-white transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2"
-              href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products"
-              target="_blank"
-              rel="noopener"
-            >
-              Discuss your requirement
-            </a>
+      <section class="border-b border-black/10">
+        <div class="mx-auto grid min-h-[calc(100vh-73px)] max-w-6xl items-center gap-12 px-5 py-20 sm:px-6 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <div>
+            <p class="mb-6 inline-flex rounded-full border border-roseline bg-blush px-4 py-2 text-sm font-semibold text-ink">
+              Indore based B2B uniform manufacturing
+            </p>
+            <h1 class="max-w-4xl text-4xl font-bold leading-[1.03] tracking-tight sm:text-5xl lg:text-6xl">
+              Uniform Manufacturer for Modern Businesses
+            </h1>
+            <p class="mt-7 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
+              Premium uniforms and apparel designed for scale, comfort, and precision.
+            </p>
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a
+                class="inline-flex min-h-12 items-center justify-center rounded-full bg-ink px-8 text-base font-semibold text-white transition hover:bg-black focus:outline-none focus:ring-2 focus:ring-ink focus:ring-offset-2"
+                href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products"
+                target="_blank"
+                rel="noopener"
+              >
+                Discuss your requirement
+              </a>
+              <a class="text-sm font-semibold text-muted transition hover:text-ink" href="tel:+918754021058">
+                +91 87540 21058
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section id="categories" class="border-b border-neutral-200 py-24 sm:py-32">
-        <div class="mx-auto max-w-6xl px-5">
-          <h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            Five focused manufacturing lines.
-          </h2>
-
-          <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <a href="#air-hostess" class="group block">
-              <div class="aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-100">
-                <img
-                  class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                  src="assets/openart-image_TWDEeJPt_1768826333705_raw (1).jpg"
-                  alt="Air Hostess Uniform"
-                  loading="lazy"
-                />
+          <div class="relative mx-auto w-full max-w-md lg:max-w-none">
+            <div class="aspect-[4/5] overflow-hidden rounded-[8px] bg-neutral-100">
+              <img
+                class="h-full w-full object-cover"
+                src="assets/openart-image_TWDEeJPt_1768826333705_raw%20%281%29.jpg"
+                alt="Premium structured uniform manufactured by Lancer Fashions"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="absolute -bottom-5 left-5 right-5 rounded-[8px] border border-black/10 bg-white px-5 py-4 shadow-[0_18px_45px_rgba(17,17,17,0.08)]">
+              <div class="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <p class="text-sm font-bold">Bulk</p>
+                  <p class="mt-1 text-xs text-muted">orders</p>
+                </div>
+                <div class="border-x border-black/10">
+                  <p class="text-sm font-bold">OEM</p>
+                  <p class="mt-1 text-xs text-muted">ready</p>
+                </div>
+                <div>
+                  <p class="text-sm font-bold">India</p>
+                  <p class="mt-1 text-xs text-muted">supply</p>
+                </div>
               </div>
-              <h3 class="mt-5 text-base font-medium tracking-tight">Air Hostess Uniform</h3>
-            </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <a href="#womens-dresses" class="group block">
-              <div class="aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-100">
-                <img
-                  class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                  src="assets/openart-image_oO9qy9ip_1770478665777_raw.jpg"
-                  alt="Women's Dresses"
-                  loading="lazy"
-                />
+      <section id="categories" class="border-b border-black/10 bg-blush/30 py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6">
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-muted">Manufacturing lines</p>
+            <h2 class="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+              Focused categories for business buyers.
+            </h2>
+          </div>
+
+          <div class="mt-12 grid justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
+            <article class="flip-card h-[360px] w-full max-w-[190px] outline-none" tabindex="0">
+              <div class="flip-inner relative h-full w-full">
+                <div class="flip-face absolute inset-0 overflow-hidden rounded-full bg-neutral-100">
+                  <img
+                    class="h-full w-full object-cover object-top"
+                    src="assets/air-hostess-uniform/red-blue-air-hostess-dress.jpeg"
+                    alt="Air hostess uniform manufacturing sample by Lancer Fashions in Indore"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-x-0 bottom-0 bg-white/92 px-7 py-5 backdrop-blur">
+                    <h3 class="text-center text-base font-bold tracking-tight">Air Hostess Uniform</h3>
+                  </div>
+                </div>
+                <div class="flip-face flip-back absolute inset-0 flex flex-col items-center justify-center rounded-full border border-roseline bg-blush px-8 text-center">
+                  <h3 class="text-base font-bold tracking-tight">Air Hostess Uniform</h3>
+                  <p class="mt-3 text-xs font-medium leading-5 text-muted">Bulk cabin crew programs.</p>
+                  <a class="mt-5 text-sm font-bold text-ink underline decoration-roseline underline-offset-4" href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products" target="_blank" rel="noopener" aria-label="Enquire about air hostess uniform manufacturing on WhatsApp">
+                    Enquire on WhatsApp
+                  </a>
+                </div>
               </div>
-              <h3 class="mt-5 text-base font-medium tracking-tight">Women's Dresses</h3>
-            </a>
+            </article>
 
-            <a href="#co-ord" class="group block">
-              <div class="aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-100">
-                <img
-                  class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                  src="assets/openart-image_zBQgtnqY_1770478470737_raw.jpg"
-                  alt="Co-Ord Sets"
-                  loading="lazy"
-                />
+            <article class="flip-card h-[360px] w-full max-w-[190px] outline-none" tabindex="0">
+              <div class="flip-inner relative h-full w-full">
+                <div class="flip-face absolute inset-0 overflow-hidden rounded-full bg-neutral-100">
+                  <img
+                    class="h-full w-full object-cover object-top"
+                    src="assets/womens-dresses/white-shirt-midi-dress.jpeg"
+                    alt="Women's dress manufacturing sample for corporate and retail buyers"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-x-0 bottom-0 bg-white/92 px-7 py-5 backdrop-blur">
+                    <h3 class="text-center text-base font-bold tracking-tight">Women&rsquo;s Dresses</h3>
+                  </div>
+                </div>
+                <div class="flip-face flip-back absolute inset-0 flex flex-col items-center justify-center rounded-full border border-roseline bg-blush px-8 text-center">
+                  <h3 class="text-base font-bold tracking-tight">Women&rsquo;s Dresses</h3>
+                  <p class="mt-3 text-xs font-medium leading-5 text-muted">Corporate and retail runs.</p>
+                  <a class="mt-5 text-sm font-bold text-ink underline decoration-roseline underline-offset-4" href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products" target="_blank" rel="noopener" aria-label="Enquire about women's dress manufacturing on WhatsApp">
+                    Enquire on WhatsApp
+                  </a>
+                </div>
               </div>
-              <h3 class="mt-5 text-base font-medium tracking-tight">Co-Ord Sets</h3>
-            </a>
+            </article>
 
-            <a href="#formal-suits" class="group block">
-              <div class="aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-100">
-                <img
-                  class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                  src="assets/Lycra Blend Men Format Suit.jpg"
-                  alt="Formal Suits"
-                  loading="lazy"
-                />
+            <article class="flip-card h-[360px] w-full max-w-[190px] outline-none" tabindex="0">
+              <div class="flip-inner relative h-full w-full">
+                <div class="flip-face absolute inset-0 overflow-hidden rounded-full bg-neutral-100">
+                  <img
+                    class="h-full w-full object-cover object-top"
+                    src="assets/co-ord-sets/rust-women-co-ord-set.jpeg"
+                    alt="Women co-ord set manufacturing sample for bulk apparel production"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-x-0 bottom-0 bg-white/92 px-7 py-5 backdrop-blur">
+                    <h3 class="text-center text-base font-bold tracking-tight">Co-Ord Sets</h3>
+                  </div>
+                </div>
+                <div class="flip-face flip-back absolute inset-0 flex flex-col items-center justify-center rounded-full border border-roseline bg-blush px-8 text-center">
+                  <h3 class="text-base font-bold tracking-tight">Co-Ord Sets</h3>
+                  <p class="mt-3 text-xs font-medium leading-5 text-muted">Private label ready.</p>
+                  <a class="mt-5 text-sm font-bold text-ink underline decoration-roseline underline-offset-4" href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products" target="_blank" rel="noopener" aria-label="Enquire about women co-ord set manufacturing on WhatsApp">
+                    Enquire on WhatsApp
+                  </a>
+                </div>
               </div>
-              <h3 class="mt-5 text-base font-medium tracking-tight">Formal Suits</h3>
-            </a>
+            </article>
 
-            <a href="#pilot" class="group block">
-              <div class="aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-100">
-                <img
-                  class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                  src="assets/White Cotton Pilot Uniform.jpg"
-                  alt="Pilot Uniform"
-                  loading="lazy"
-                />
+            <article class="flip-card h-[360px] w-full max-w-[190px] outline-none" tabindex="0">
+              <div class="flip-inner relative h-full w-full">
+                <div class="flip-face absolute inset-0 overflow-hidden rounded-full bg-neutral-100">
+                  <img
+                    class="h-full w-full object-cover object-top"
+                    src="assets/formal-suits/blue-men-formal-suit.jpeg"
+                    alt="Men's formal suit manufacturing sample for corporate uniforms"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-x-0 bottom-0 bg-white/92 px-7 py-5 backdrop-blur">
+                    <h3 class="text-center text-base font-bold tracking-tight">Formal Suits</h3>
+                  </div>
+                </div>
+                <div class="flip-face flip-back absolute inset-0 flex flex-col items-center justify-center rounded-full border border-roseline bg-blush px-8 text-center">
+                  <h3 class="text-base font-bold tracking-tight">Formal Suits</h3>
+                  <p class="mt-3 text-xs font-medium leading-5 text-muted">Sharp team uniforms.</p>
+                  <a class="mt-5 text-sm font-bold text-ink underline decoration-roseline underline-offset-4" href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products" target="_blank" rel="noopener" aria-label="Enquire about men's formal suit manufacturing on WhatsApp">
+                    Enquire on WhatsApp
+                  </a>
+                </div>
               </div>
-              <h3 class="mt-5 text-base font-medium tracking-tight">Pilot Uniform</h3>
-            </a>
+            </article>
+
+            <article class="flip-card h-[360px] w-full max-w-[190px] outline-none" tabindex="0">
+              <div class="flip-inner relative h-full w-full">
+                <div class="flip-face absolute inset-0 overflow-hidden rounded-full bg-neutral-100">
+                  <img
+                    class="h-full w-full object-cover object-top"
+                    src="assets/pilot-uniform/white-cotton-pilot-uniform.jpeg"
+                    alt="Pilot uniform manufacturing sample with shirt, tie, epaulettes, and trousers"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-x-0 bottom-0 bg-white/92 px-7 py-5 backdrop-blur">
+                    <h3 class="text-center text-base font-bold tracking-tight">Pilot Uniform</h3>
+                  </div>
+                </div>
+                <div class="flip-face flip-back absolute inset-0 flex flex-col items-center justify-center rounded-full border border-roseline bg-blush px-8 text-center">
+                  <h3 class="text-base font-bold tracking-tight">Pilot Uniform</h3>
+                  <p class="mt-3 text-xs font-medium leading-5 text-muted">Aviation supply ready.</p>
+                  <a class="mt-5 text-sm font-bold text-ink underline decoration-roseline underline-offset-4" href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products" target="_blank" rel="noopener" aria-label="Enquire about pilot uniform manufacturing on WhatsApp">
+                    Enquire on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="flip-card h-[360px] w-full max-w-[190px] outline-none" tabindex="0">
+              <div class="flip-inner relative h-full w-full">
+                <div class="flip-face absolute inset-0 overflow-hidden rounded-full bg-neutral-100">
+                  <img
+                    class="h-full w-full object-cover object-top"
+                    src="assets/kurti/multicolor-floral-kurti-dupatta-set.jpeg"
+                    alt="Kurti manufacturing sample for boutique and retail bulk buyers"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-x-0 bottom-0 bg-white/92 px-7 py-5 backdrop-blur">
+                    <h3 class="text-center text-base font-bold tracking-tight">Kurti</h3>
+                  </div>
+                </div>
+                <div class="flip-face flip-back absolute inset-0 flex flex-col items-center justify-center rounded-full border border-roseline bg-blush px-8 text-center">
+                  <h3 class="text-base font-bold tracking-tight">Kurti</h3>
+                  <p class="mt-3 text-xs font-medium leading-5 text-muted">Boutique bulk runs.</p>
+                  <a class="mt-5 text-sm font-bold text-ink underline decoration-roseline underline-offset-4" href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products" target="_blank" rel="noopener" aria-label="Enquire about kurti manufacturing on WhatsApp">
+                    Enquire on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="flip-card h-[360px] w-full max-w-[190px] outline-none" tabindex="0">
+              <div class="flip-inner relative h-full w-full">
+                <div class="flip-face absolute inset-0 overflow-hidden rounded-full bg-neutral-100">
+                  <img
+                    class="h-full w-full object-cover object-top"
+                    src="assets/taekwondo-uniform/white-taekwondo-uniform.jpeg"
+                    alt="Taekwondo uniform manufacturing sample for academies and sports institutions"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-x-0 bottom-0 bg-white/92 px-7 py-5 backdrop-blur">
+                    <h3 class="text-center text-base font-bold tracking-tight">Taekwondo Uniform</h3>
+                  </div>
+                </div>
+                <div class="flip-face flip-back absolute inset-0 flex flex-col items-center justify-center rounded-full border border-roseline bg-blush px-8 text-center">
+                  <h3 class="text-base font-bold tracking-tight">Taekwondo Uniform</h3>
+                  <p class="mt-3 text-xs font-medium leading-5 text-muted">Academy supply ready.</p>
+                  <a class="mt-5 text-sm font-bold text-ink underline decoration-roseline underline-offset-4" href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products" target="_blank" rel="noopener" aria-label="Enquire about taekwondo uniform manufacturing on WhatsApp">
+                    Enquire on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="air-hostess" class="border-b border-neutral-200 py-24 sm:py-32">
-        <div class="mx-auto max-w-3xl px-5">
-          <h2 class="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            Air Hostess Uniform Manufacturer in India
-          </h2>
-          <div class="mt-8 space-y-6 text-lg leading-relaxed text-neutral-600">
-            <p>
-              We specialize in manufacturing premium air hostess uniforms designed for airlines, aviation training institutes, and corporate hospitality teams. Based in Indore, Lancer Fashions & Co provides bulk production of cabin crew uniforms with a focus on structured fit, comfort, and durability. Our range includes crepe dress uniforms, dual-tone cabin crew outfits, formal shirt and skirt combinations, and premium blazer suit uniforms.
-            </p>
-            <p>
-              Each uniform is tailored for long working hours, ensuring breathable fabric, clean silhouettes, and a professional appearance. We offer complete customization including fabric selection, color combinations, branding, and sizing. Our uniforms are widely used across aviation, hospitality, retail front desk teams, and corporate environments across India.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="womens-dresses" class="border-b border-neutral-200 py-24 sm:py-32">
-        <div class="mx-auto max-w-3xl px-5">
-          <h2 class="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            Women's Dress Manufacturer for Corporate and Retail
-          </h2>
-          <div class="mt-8 space-y-6 text-lg leading-relaxed text-neutral-600">
-            <p>
-              Lancer Fashions & Co manufactures a range of women's dresses suitable for corporate wear, boutique collections, and hospitality uniforms. Our collection includes crepe midi dresses, cotton midi dresses, bodycon formal dresses, blazer dresses, and belted coat dresses designed for modern professional environments.
-            </p>
-            <p>
-              Based in Indore, we focus on delivering structured silhouettes, breathable fabrics, and elegant minimal designs. These dresses are ideal for office wear brands, front desk staff, retail uniforms, and semi-formal collections. Each design can be customized in terms of fabric, color, fit, and branding, making it suitable for bulk manufacturing and private label requirements across India.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="co-ord" class="border-b border-neutral-200 py-24 sm:py-32">
-        <div class="mx-auto max-w-3xl px-5">
-          <h2 class="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            Women Co-Ord Set Manufacturer in India
-          </h2>
-          <div class="mt-8 space-y-6 text-lg leading-relaxed text-neutral-600">
-            <p>
-              We offer premium women's co-ord sets designed for modern corporate and semi-formal wear. Our crepe co-ord sets include blazer-style tops and peplum designs paired with tailored trousers, providing a structured and contemporary look.
-            </p>
-            <p>
-              Manufactured in Indore, these sets are ideal for corporate teams, hospitality staff, retail brands, and event professionals. Designed with comfort and durability in mind, they are suitable for long working hours while maintaining a sharp appearance. We support bulk production and offer full customization including fabric, colors, trims, and branding for businesses across India.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="formal-suits" class="border-b border-neutral-200 py-24 sm:py-32">
-        <div class="mx-auto max-w-3xl px-5">
-          <h2 class="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            Men's Formal Suit Manufacturer in Indore
-          </h2>
-          <div class="mt-8 space-y-6 text-lg leading-relaxed text-neutral-600">
-            <p>
-              Lancer Fashions & Co manufactures high-quality men's formal suits designed for corporate uniforms, hospitality staff, and retail environments. Our range includes lycra and lycra-blend suits available in 2-piece and 3-piece variants, offering a modern and tailored fit.
-            </p>
-            <p>
-              These suits are designed for long working hours, combining comfort with a sharp professional look. Features include structured blazers, optional waistcoats, slim-fit trousers, and breathable fabrics. Based in Indore, we support bulk manufacturing and customization including fabric, fit, color, and branding for clients across India.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="pilot" class="border-b border-neutral-200 py-24 sm:py-32">
-        <div class="mx-auto max-w-3xl px-5">
-          <h2 class="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            Pilot Uniform Manufacturer in India
-          </h2>
-          <div class="mt-8 space-y-6 text-lg leading-relaxed text-neutral-600">
-            <p>
-              We manufacture professional pilot uniforms designed for airlines, aviation institutes, and corporate environments. Our pilot uniforms include white cotton shirts with epaulettes, tailored trousers, and complete uniform sets suitable for captain and crew roles.
-            </p>
-            <p>
-              Designed for durability and daily use, these uniforms offer a clean, authoritative look while ensuring comfort. Customization options include logo embroidery, stripe detailing, fabric selection, and sizing. Based in Indore, we supply pilot uniforms in bulk to clients across India including aviation training institutes and corporate sectors.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="capabilities" class="border-b border-neutral-200 py-24 sm:py-32">
-        <div class="mx-auto max-w-6xl px-5">
-          <h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            Capabilities.
-          </h2>
-
-          <div class="mt-16 grid gap-px overflow-hidden rounded-2xl bg-neutral-200 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="bg-white p-8">
-              <h3 class="text-base font-medium tracking-tight">Bulk Manufacturing</h3>
+      <section id="gallery" class="border-b border-black/10 py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6">
+          <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div class="max-w-2xl">
+              <p class="text-sm font-semibold uppercase tracking-[0.18em] text-muted">Visual proof</p>
+              <h2 class="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">Built with restraint and finish.</h2>
             </div>
-            <div class="bg-white p-8">
-              <h3 class="text-base font-medium tracking-tight">Custom Uniform Design</h3>
+            <a class="text-sm font-bold text-ink underline decoration-roseline underline-offset-4" href="#contact">Start an enquiry</a>
+          </div>
+
+          <div class="mt-12 columns-1 gap-4 sm:columns-2 lg:columns-3 xl:columns-4">
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-blush/45 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/air-hostess-uniform/air-hostess-shirt-skirt-scarf.jpeg" alt="Air hostess shirt and skirt uniform with scarf" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/air-hostess-uniform/red-cabin-crew-dress.jpeg" alt="Red cabin crew dress uniform" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/womens-dresses/purple-bodycon-formal-dress.jpeg" alt="Purple bodycon formal dress" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-roseline/30 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/air-hostess-uniform/purple-cabin-crew-dress.jpeg" alt="Purple cabin crew dress uniform" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/air-hostess-uniform/purple-blazer-cabin-crew-dress.jpeg" alt="Purple blazer cabin crew dress uniform" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/formal-suits/blue-waistcoat-formal-suit.jpeg" alt="Blue waistcoat formal suit" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-blush/45 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/air-hostess-uniform/red-blue-cabin-crew-suit.jpeg" alt="Red and blue cabin crew suit" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/air-hostess-uniform/red-double-breasted-cabin-crew-dress.jpeg" alt="Red double breasted cabin crew dress" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/air-hostess-uniform/purple-short-sleeve-cabin-crew-dress.jpeg" alt="Purple short sleeve cabin crew dress" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-roseline/30 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/formal-suits/blue-men-formal-suit.jpeg" alt="Blue men's formal suit" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/pilot-uniform/white-cotton-pilot-uniform.jpeg" alt="White cotton pilot uniform" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/air-hostess-uniform/red-blue-air-hostess-dress.jpeg" alt="Red and blue air hostess dress uniform" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-blush/45 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/co-ord-sets/rust-women-co-ord-set.jpeg" alt="Rust women co-ord set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/womens-dresses/tan-midi-dress.jpeg" alt="Tan midi dress" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/womens-dresses/white-shirt-midi-dress.jpeg" alt="White shirt midi dress" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-roseline/30 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/co-ord-sets/beige-peplum-co-ord-set.jpeg" alt="Beige peplum co-ord set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/formal-suits/brown-women-skirt-suit.jpeg" alt="Brown women skirt suit" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/womens-dresses/olive-belted-midi-dress.jpeg" alt="Olive belted midi dress" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-blush/45 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/womens-dresses/white-black-blazer-dress.jpeg" alt="White and black blazer dress" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/womens-dresses/sleeveless-vest-skirt-dress.jpeg" alt="Sleeveless vest and skirt dress" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/blue-printed-kurti-palazzo.jpeg" alt="Blue printed kurti palazzo set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-roseline/30 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/white-blue-embroidered-kurti-dupatta.jpeg" alt="White blue embroidered kurti dupatta set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/cream-embroidered-kurti-set.jpeg" alt="Cream embroidered kurti set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/beige-floral-kurti-dupatta-set.jpeg" alt="Beige floral kurti dupatta set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-blush/45 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/teal-printed-kurti-palazzo.jpeg" alt="Teal printed kurti palazzo set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/multicolor-floral-kurti-dupatta-set.jpeg" alt="Multicolor floral kurti dupatta set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/pink-floral-kurti-dupatta-set.jpeg" alt="Pink floral kurti dupatta set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-roseline/30 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/pink-sleeveless-kurti-palazzo.jpeg" alt="Pink sleeveless kurti palazzo set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/green-printed-kurti-palazzo.jpeg" alt="Green printed kurti palazzo set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/beige-printed-kurti-palazzo.jpeg" alt="Beige printed kurti palazzo set" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-roseline bg-blush/45 p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/taekwondo-uniform/white-taekwondo-uniform.jpeg" alt="White taekwondo uniform" loading="lazy" />
+            </figure>
+            <figure class="gallery-item mb-4 break-inside-avoid overflow-hidden rounded-[8px] border border-black/10 bg-white p-2">
+              <img class="gallery-image h-auto w-full rounded-[6px]" src="assets/kurti/olive-printed-kurti-palazzo.jpeg" alt="Olive printed kurti palazzo set" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" class="border-b border-black/10 bg-roseline/20 py-20 sm:py-28">
+        <div class="mx-auto max-w-6xl px-5 sm:px-6">
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-muted">Capabilities</p>
+            <h2 class="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+              Made for repeatable bulk production.
+            </h2>
+          </div>
+
+          <div class="mt-12 grid gap-px overflow-hidden rounded-[8px] border border-black/10 bg-black/10 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="bg-white p-7">
+              <h3 class="text-lg font-bold tracking-tight">Bulk Manufacturing</h3>
+              <p class="mt-3 text-sm leading-6 text-muted">Planned batches for uniforms, apparel lines, and team rollouts.</p>
             </div>
-            <div class="bg-white p-8">
-              <h3 class="text-base font-medium tracking-tight">OEM / Private Label Production</h3>
+            <div class="bg-white p-7">
+              <h3 class="text-lg font-bold tracking-tight">Custom Uniform Design</h3>
+              <p class="mt-3 text-sm leading-6 text-muted">Fabric, color, trims, fit, logo placement, and role-wise variations.</p>
             </div>
-            <div class="bg-white p-8">
-              <h3 class="text-base font-medium tracking-tight">Pan-India Supply</h3>
+            <div class="bg-white p-7">
+              <h3 class="text-lg font-bold tracking-tight">OEM / Private Label</h3>
+              <p class="mt-3 text-sm leading-6 text-muted">Production support for boutique labels and business apparel brands.</p>
+            </div>
+            <div class="bg-white p-7">
+              <h3 class="text-lg font-bold tracking-tight">Pan-India Supply</h3>
+              <p class="mt-3 text-sm leading-6 text-muted">Manufactured in Indore and supplied to buyers across India.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="trust" class="border-b border-neutral-200 py-24 sm:py-32">
-        <div class="mx-auto max-w-6xl px-5">
-          <h2 class="max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            A serious manufacturing partner.
-          </h2>
-
-          <div class="mt-16 grid gap-10 sm:grid-cols-3">
-            <div>
-              <p class="text-5xl font-semibold tracking-tight">7+</p>
-              <p class="mt-4 text-base text-neutral-600">Years of experience</p>
-            </div>
-            <div>
-              <p class="text-5xl font-semibold tracking-tight">India</p>
-              <p class="mt-4 text-base text-neutral-600">Serving clients across the country</p>
-            </div>
-            <div>
-              <p class="text-5xl font-semibold tracking-tight">IndiaMART</p>
-              <p class="mt-4 text-base text-neutral-600">Trusted supplier on IndiaMART</p>
+      <section id="trust" class="border-b border-black/10 py-20 sm:py-28">
+        <div class="mx-auto max-w-6xl px-5 sm:px-6">
+          <div class="rounded-[8px] bg-blush px-6 py-12 sm:px-10 lg:px-12">
+            <h2 class="max-w-3xl text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+              A serious manufacturing partner.
+            </h2>
+            <div class="mt-12 grid gap-8 sm:grid-cols-3">
+              <div>
+                <p class="text-4xl font-bold tracking-tight sm:text-5xl">7+</p>
+                <p class="mt-3 text-sm font-semibold text-muted sm:text-base">Years Experience</p>
+              </div>
+              <div>
+                <p class="text-4xl font-bold tracking-tight sm:text-5xl">India</p>
+                <p class="mt-3 text-sm font-semibold text-muted sm:text-base">Serving clients across India</p>
+              </div>
+              <div>
+                <p class="text-4xl font-bold tracking-tight sm:text-5xl">IndiaMART</p>
+                <p class="mt-3 text-sm font-semibold text-muted sm:text-base">Trusted supplier on IndiaMART</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="py-24 sm:py-32">
-        <div class="mx-auto max-w-3xl px-5 text-center">
-          <h2 class="text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
+      <section id="contact" class="py-20 sm:py-28">
+        <div class="mx-auto max-w-3xl px-5 text-center sm:px-6">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-muted">Contact</p>
+          <h2 class="mt-4 text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
             Discuss your requirement.
           </h2>
-          <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-neutral-600">
-            Send a message on WhatsApp with your specifications. We'll get back with samples and pricing.
+          <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted">
+            Share your category, quantity, fabric preference, and delivery location. We will respond with the next step.
           </p>
           <div class="mt-10 flex flex-col items-center gap-4">
             <a
-              class="inline-flex min-h-12 items-center justify-center rounded-full bg-neutral-950 px-8 text-base font-medium text-white transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-950 focus:ring-offset-2"
+              class="inline-flex min-h-12 items-center justify-center rounded-full bg-ink px-8 text-base font-semibold text-white transition hover:bg-black focus:outline-none focus:ring-2 focus:ring-ink focus:ring-offset-2"
               href="https://wa.me/918754021058?text=Hi%20I%20am%20interested%20in%20your%20products"
               target="_blank"
               rel="noopener"
             >
               WhatsApp +91 87540 21058
             </a>
-            <a class="text-base text-neutral-600 hover:text-neutral-950" href="tel:+918754021058">
-              Or call +91 87540 21058
+            <a class="text-base font-semibold text-muted transition hover:text-ink" href="tel:+918754021058">
+              Call +91 87540 21058
             </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-neutral-200 py-10">
-      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 text-sm text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
-        <p>&copy; 2026 Lancer Fashions & Co. &middot; Indore, Madhya Pradesh, India</p>
-        <a class="hover:text-neutral-950" href="#top">Back to top</a>
+    <footer class="border-t border-black/10 py-10">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <p>&copy; 2026 Lancer Fashions &amp; Co. Indore, Madhya Pradesh, India</p>
+        <a class="font-semibold transition hover:text-ink" href="#top">Back to top</a>
       </div>
     </footer>
   </body>
